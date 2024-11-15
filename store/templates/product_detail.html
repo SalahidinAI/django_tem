@@ -1,0 +1,13 @@
+<p>Name: {{ product.product_name }}</p>
+<p>Category: {{ product.category }}</p>
+<p>Price: {{ product.price }}</p>
+<p>Have: {{ product.have }}</p>
+<p>Description: {{ product.description }}</p>
+<p>Date: {{ product.created_date }}</p>
+{% if product.image %}
+    <p><img src="{{ product.image.url }}"></p>
+{% else %}
+    <p>No images</p>
+{% endif %}
+
+<button><a href="{% url 'product_list' %}">CANCEL</a></button>
