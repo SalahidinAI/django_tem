@@ -20,3 +20,4 @@ class ProductCreateView(CreateView):
     template_name = 'product_create.html'
     form_class = ProductForm
     success_url = reverse_lazy('product_list')
+
