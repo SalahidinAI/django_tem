@@ -11,3 +11,5 @@
 {% endif %}
 
 <button><a href="{% url 'product_list' %}">CANCEL</a></button>
+<button><a href="{% url 'product_update' product.pk %}">UPDATE</a></button>
+<button><a href="{% url 'product_delete' product.pk %}">DELETE</a></button>
